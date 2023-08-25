@@ -12,7 +12,7 @@ export default class App extends Component{
      const{store}=this.props 
      
      return(
-      <BrowserRouter>
+      <BrowserRouter basename="/HabitTrackerApp">
         <Routes>
           <Route exact path="/" element={<Home store={store}/>}/>
           <Route exact path="/Allhabits" element={<Habits store={store}/>}/>

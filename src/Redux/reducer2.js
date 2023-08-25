@@ -1,7 +1,7 @@
 import { weekdetailcreator } from "./WeekManagement";
 
 let initial=[]
-if(localStorage.getItem("habits")===undefined)
+if(localStorage.getItem("habits")===undefined || localStorage.getItem("habits")===null)
 {
     localStorage.setItem("habits", JSON.stringify(new Array(0)));
     initial=[]
